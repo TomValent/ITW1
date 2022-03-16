@@ -35,11 +35,12 @@ body{
     background-size: cover;
     width: 100%;
     height: 100vh;
+    overflow: hidden;
 }
 
 #logo{
     color: steelblue;
-    font-family: Special Elite;
+    font-family: 'Special Elite';
     font-size: 40px;
     height: 100%;
 }
@@ -67,8 +68,15 @@ body{
 }
 
 #get-started a{
-        color: #bfbfbf;
-        text-decoration: none;
+    color: #bfbfbf;
+    text-decoration: none;
+}
+
+#get-started:hover{
+    background-color: steelblue;
+    border: none;
+    color: white;
+    border-radius: 15px;
 }
 
 #header-title{
@@ -83,18 +91,22 @@ body{
 
 li{
     float: left;
-    margin: 5px;
-    padding: 5px;
+    text-align: center;
+    width: 70px;
+    list-style-type: none;
+}
+
+li:hover{
+    border: 2px solid #bfbfbf;
+    display: inline-block;
+    box-sizing: border-box;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 li a{
     color: #bfbfbf;
     text-decoration: none;
-}
-
-li::marker{
-    margin-left: 5px;
-    margin-right: 5px;
 }
 
 ul{
@@ -153,4 +165,16 @@ ul{
 
 #phone a{   
     text-decoration: none;
+}
+
+#mail:hover{
+    color: white;
+}
+
+#logo a:hover{
+    color: white;
+}
+
+#networks:hover{
+    color: white;
 }
