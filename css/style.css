@@ -51,20 +51,20 @@ body{
 }
 
 #header .content h1 {
-    margin-bottom: 20px;
+    margin-bottom: 0px;
     margin-left: 20px;
-    font-weight: normal;
     color: white;
     font-size: 64px;
 }
 
 #get-started{
     display: inline-flex;
-    border-radius: 15px;
+    border-radius: 5px;
     border: 2px solid #bfbfbf;
     padding: 20px;
     margin-top: 10px;
     margin-left: 25px;
+    font-size: large;
 }
 
 #get-started a{
@@ -83,10 +83,17 @@ body{
     margin-top: 300px;
     font-weight: bold;
     margin-left: 5px;
+    font-size: 64px;
 }
 
 #navigation{
     margin: 0 auto;
+    font-size: 13px;
+    letter-spacing: .05em;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 li{
@@ -97,7 +104,7 @@ li{
 }
 
 li:hover{
-    border: 2px solid #bfbfbf;
+    border: 1px solid #bfbfbf;
     display: inline-block;
     box-sizing: border-box;
     padding-left: 10px;
@@ -115,7 +122,7 @@ ul{
 }
 
 #logo{
-    font-size: large;
+    font-size: 25px;
     width: 50%;
     float: left;
     margin-top: 10px;
@@ -177,4 +184,79 @@ ul{
 
 #networks:hover{
     color: white;
+}
+
+h2{
+    font-size: 32px;
+    text-align: center;
+}
+
+p{
+    padding-left: 60px;
+    padding-right: 60px;
+    text-align: center;
+}
+
+#services{
+    text-align: center;
+}
+
+.services-column{
+    padding: 20px;
+    width: 25%;
+    height: 100%;
+    display: inline-block;
+    text-align: center;
+    color: #898989;
+    column-gap: 40px;
+}
+
+.services-card{
+    color: #bfbfbf;
+    box-shadow: 10px 10px 10px 10px #bfbfbf;
+}
+
+.services-card:hover{
+    box-shadow: 10px 10px 10px 10px steelblue;
+}
+
+.services img:first-child{
+    padding: 5px;
+}
+
+.services-card:hover img:first-child{
+    transition: 0.5s;
+    display: none;
+}
+
+.services-card:hover img:last-child{
+
+    background-color: steelblue;
+    display: inline;
+}
+
+.services-card img:last-child{
+    display: none;
+}
+
+#services img{
+    width: 50px;
+    margin-top: 20px;
+    border: 1px solid steelblue;
+    border-radius: 5px;
+}
+
+h3{
+    font-size: 24px;
+    margin: 0;
+    margin-top: 20px;
+    padding: 0;
+}
+
+.services-card p{
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 5px;
+    padding-bottom: 25px;
+    margin: 0;
 }
