@@ -1,0 +1,156 @@
+/*
+ * Login: xvalen27
+ *
+ * Doplnte sve reseni.
+ *
+ * Nezapomente pridat strucne hromadne komentare pro pravidla jednotlivych sekci
+ * a pro netrivialni useky kodu (napr. bubliny v sekci #refs)
+ */
+
+html{
+    min-width: 768px;
+}
+
+body{
+	font-family: 'PT Sans', 'Special Elite';
+	font-size: 14px;
+	line-height: 1.7;
+	min-width: 768px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin: 0 auto;
+}
+
+.content {
+    max-width: 1200px;
+    min-width: 768px;
+    margin: auto;
+}
+
+#header{
+    width: 100%;
+    background-image: url("../img/header.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+
+#logo{
+    color: steelblue;
+    font-family: Special Elite;
+    font-size: 40px;
+    height: 100%;
+}
+
+#header .content{
+    background-size: contain;
+    width: 1200px;
+}
+
+#header .content h1 {
+    margin-bottom: 20px;
+    margin-left: 20px;
+    font-weight: normal;
+    color: white;
+    font-size: 64px;
+}
+
+#get-started{
+    display: inline-flex;
+    border-radius: 15px;
+    border: 2px solid #bfbfbf;
+    padding: 20px;
+    margin-top: 10px;
+    margin-left: 25px;
+}
+
+#get-started a{
+        color: #bfbfbf;
+        text-decoration: none;
+}
+
+#header-title{
+    margin-top: 300px;
+    font-weight: bold;
+    margin-left: 5px;
+}
+
+#navigation{
+    margin: 0 auto;
+}
+
+li{
+    float: left;
+    margin: 5px;
+    padding: 5px;
+}
+
+li a{
+    color: #bfbfbf;
+    text-decoration: none;
+}
+
+li::marker{
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+ul{
+    margin: 0;
+    padding: 10px;
+}
+
+#logo{
+    font-size: large;
+    width: 50%;
+    float: left;
+    margin-top: 10px;
+}
+
+#logo a{
+    color: steelblue;
+    text-decoration: none;
+}
+
+#networks{
+    float: right;
+    margin-right: 50px;
+    clear: both
+}
+
+.fab{
+    padding-right: 5px;
+    color: steelblue;
+    padding-right: 10px;
+}
+
+.fas{
+    color: steelblue;
+    padding-right: 5px;
+    padding-left: 15px;
+}
+
+#contacts{
+    width: 25%;
+    float: right;
+    margin-right: 50px;
+    position: relative;
+    margin-top: 10px;
+}
+
+#contacts a{
+    color: #bfbfbf;
+    text-decoration: none;
+}
+
+#phone{
+    width: 50%;
+    margin-right: 5px;
+    color: #bfbfbf;
+}
+
+#phone a{   
+    text-decoration: none;
+}
