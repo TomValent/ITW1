@@ -59,7 +59,7 @@ body{
 
 #get-started{
     display: inline-flex;
-    border-radius: 5px;
+    border-radius: 15px;
     border: 2px solid #bfbfbf;
     padding: 20px;
     margin-top: 10px;
@@ -212,10 +212,11 @@ p{
 #services > div:nth-child(1) > div:nth-child(3){
     display: grid;
     grid-template-columns: 50% 50%;
-    width: 50%;
     gap: 40px;
     grid-column: 2;
     margin-left: 24%;
+    margin-right: 24%;
+    width: 550px;
 }
 
 .services-card{
@@ -237,7 +238,6 @@ p{
 }
 
 .services-card:hover img:last-child{
-
     background-color: steelblue;
     display: inline;
 }
@@ -258,6 +258,7 @@ h3{
     margin: 0;
     margin-top: 20px;
     padding: 0;
+    color: black;
 }
 
 .services-card p{
@@ -267,3 +268,46 @@ h3{
     padding-bottom: 25px;
     margin: 0;
 }
+
+.about-item img{
+    width: 40%;
+}
+
+#about{
+    background-color: #f7f7f7;
+    padding: 60px;
+    overflow: hidden;
+}
+
+#about-itemt{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    align-items: left;
+}
+
+.about-item img{
+    float: left;
+    width: 40%;
+    margin-right: 200px;
+}
+
+.about-item p{
+    float: right;
+    width: 60%;
+    padding: 0;
+}
+
+.about-item h2{
+    float:right;
+    width: 60%;
+}
+
+
+/*
+.about-item:nth-child(odd){
+
+}
+
+.about-item:nth-child(even){
+
+}*/
