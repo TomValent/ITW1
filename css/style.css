@@ -267,47 +267,115 @@ h3{
     padding-top: 5px;
     padding-bottom: 25px;
     margin: 0;
-}
-
-.about-item img{
-    width: 40%;
-}
+}   
 
 #about{
     background-color: #f7f7f7;
     padding: 60px;
     overflow: hidden;
+    display: flex;
 }
 
-#about-itemt{
-    display: grid;
-    grid-template-columns: 50% 50%;
-    align-items: left;
+.about-item{
+    padding-top: 40px;
+    padding-bottom: 40px;
 }
 
 .about-item img{
-    float: left;
-    width: 40%;
-    margin-right: 200px;
+    transition: 0.5s ease-in-out;
 }
 
 .about-item p{
-    float: right;
-    width: 60%;
-    padding: 0;
+    transition: 0.5s ease-in-out;
 }
 
 .about-item h2{
-    float:right;
-    width: 60%;
+    transition: 0.5s ease-in-out;
 }
 
-
-/*
-.about-item:nth-child(odd){
-
+#about .content .about-item:nth-child(odd){
+    float: left;
 }
 
-.about-item:nth-child(even){
+#about .content .about-item:nth-child(even){
+    float: right;
+}
 
-}*/
+#about .content .about-item:nth-child(odd) img{
+    float: left;
+    width: 40%;
+}
+
+#about .content .about-item:nth-child(odd) p{
+    float: right;
+    width: 50%;
+    padding: 0;
+    text-align: left;
+    padding-left: 40px;
+}
+
+#about .content .about-item:nth-child(odd) h2{
+    float: right;
+    width: 50%;
+    text-align: left;
+    padding-left: 80px;
+}
+
+#about .content .about-item:nth-child(even) img{
+    float: right;
+    width: 40%;
+}
+
+#about .content .about-item:nth-child(even) p{
+    float: left;
+    width: 50%;
+    padding: 0;
+    text-align: left;
+    padding-right: 80px;
+}
+
+#about .content .about-item:nth-child(even) h2{
+    float: left;
+    width: 50%;
+    text-align: left;
+}
+
+#about .content .about-item:nth-child(odd) img:hover{
+    float: left;
+    width: 50%;
+}
+
+#about .content .about-item:nth-child(odd) img:hover + h2 + p{
+    float: left;
+    display: unset;
+    width: 40%;
+    text-align: left;
+    padding-left: 80px;
+}
+
+#about .content .about-item:nth-child(odd) img:hover + h2{
+    float: left;
+    display: unset;
+    width: 40%;
+    text-align: left;
+}
+
+#about .content .about-item:nth-child(even) img:hover{
+    float: right;
+    width: 50%;
+}
+
+#about .content .about-item:nth-child(even) img:hover + h2 + p{
+    float: left;
+    display: unset;
+    width: 40%;
+    text-align: left;
+    padding-right: 80px;
+}
+
+#about .content .about-item:nth-child(even) img:hover + h2{
+    float: left;
+    display: unset;
+    width: 40%;
+    text-align: left;
+}
