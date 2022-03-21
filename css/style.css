@@ -189,6 +189,7 @@ ul{
 h2{
     font-size: 32px;
     text-align: center;
+    font-weight: bold;
 }
 
 p{
@@ -378,4 +379,89 @@ h3{
     display: unset;
     width: 40%;
     text-align: left;
+}
+
+#team{
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+#team .team-card{
+    text-align: center;
+}
+
+#team h2{
+    text-transform: uppercase;
+    margin-top: 50px;
+}
+
+.team-card{
+    width: 20%;
+    display: inline-block;
+    margin: 10px;
+    border: 1px solid #bfbfbf;
+    box-shadow: 0 0 10px 0 #bfbfbf;
+}
+
+.team-card:hover{
+    box-shadow: 0 0 10px 0 steelblue;
+}
+
+.team-card:hover h3, .team-card.hover h3{
+    color: steelblue;
+}
+
+.team-card img{
+    width: 100%;
+}
+
+.team-card p{
+    padding: 0px;
+}
+
+#stats{
+    margin-bottom: 50px;
+    border-top: 2px dashed #898989;
+}
+
+#stats .content{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.stats-card{
+    max-width: 300px;
+    width: 20%;
+    border: 1px solid #4d4d4d;
+    border-radius: 5px;
+    background-color: #4d4d4d;
+    text-align: center;
+    height: 100%;
+    margin: 30px;
+}
+
+.stats-card h3{
+    color: white;
+}
+
+.stats-card p{
+    color: #898989;
+}
+
+.stats-card .fa-solid{
+    border: 1px solid white;
+    background-color: white;
+    padding: 10px;
+    border-radius: 50%;
+    color: steelblue;
+    width: 50px;
+    height: 50px;
+}
+
+.stats-card .fa-solid .fa-face-smile-beam{
+    width: 50px;
+    height: 50px;
 }
