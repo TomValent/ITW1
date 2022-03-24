@@ -7,23 +7,24 @@
  * a pro netrivialni useky kodu (napr. bubliny v sekci #refs)
  */
 
-html{
-    min-width: 768px;
-}
 
+/*Hlavna cast stranky*/ 
 body{
 	font-family: 'PT Sans', 'Special Elite';
 	font-size: 14px;
 	line-height: 1.7;
 	min-width: 768px;
-    max-width: 1200px;
-    margin-left: 20px;
-    margin-right: 20px;
-    margin: 0 auto;
+    margin: auto;
 }
 
+.content {
+    max-width: 1200px;
+    min-width: 768px;
+    margin: auto;
+}
+
+/*header*/
 #header{
-    width: 100%;
     background-image: url("../img/header.jpg");
     background-repeat: no-repeat;
     background-position: center center;
@@ -31,13 +32,6 @@ body{
     width: 100%;
     height: 100vh;
     overflow: hidden;
-}
-
-#logo{
-    color: steelblue;
-    font-family: 'Special Elite';
-    font-size: 40px;
-    height: 100%;
 }
 
 #header .content{
@@ -117,10 +111,13 @@ body{
 }
 
 #logo{
-    font-size: 25px;
     width: 50%;
     float: left;
     margin-top: 10px;
+    color: steelblue;
+    font-family: 'Special Elite';
+    font-size: 40px;
+    height: 100%;
 }
 
 #logo a{
@@ -193,6 +190,7 @@ p{
     text-align: center;
 }
 
+/*Our Services*/
 #services{
     text-align: center;
     padding-bottom: 80px;
@@ -265,6 +263,7 @@ h3{
     margin: 0;
 }   
 
+/*About Us*/
 #about{
     background-color: #f7f7f7;
     padding: 60px;
@@ -306,14 +305,14 @@ h3{
     float: right;
     width: 50%;
     padding: 0;
-    text-align: left;
+    text-align: justify; 
     padding-left: 40px;
 }
 
 #about .content .about-item:nth-child(odd) h2{
     float: right;
     width: 50%;
-    text-align: left;
+    text-align: justify; 
     padding-left: 80px;
 }
 
@@ -326,8 +325,7 @@ h3{
     float: left;
     width: 50%;
     padding: 0;
-    text-align: left;
-    padding-right: 80px;
+    text-align: justify; 
 }
 
 #about .content .about-item:nth-child(even) h2{
@@ -376,6 +374,7 @@ h3{
     text-align: left;
 }
 
+/*team*/
 #team{
     text-align: center;
     padding-bottom: 50px;
@@ -414,9 +413,10 @@ h3{
     padding: 0px;
 }
 
+/*stats*/
 #stats{
     margin-bottom: 50px;
-    border-top: 2px dashed #898989;
+    border-top: 2px dotted #898989;
 }
 
 #stats .content{
@@ -465,13 +465,15 @@ h3{
     left: calc(48% - 11.5px);
 }
 
+/*Price & Schedule*/
 #price{
-    margin-left: 10%;
-    margin-right: 10%;
+    width: 100%;
     background-color: #f7f7f7;
-    margin-left: -100px;
-    margin-right: -100px;
     padding-bottom: 80px;
+}
+
+#price .content{
+    width: 100%;
 }
 
 #price table{
@@ -497,6 +499,7 @@ h3{
 
 #price th{
     font-weight: bold;
+    color: black;
 }
 
 #price td{
@@ -529,23 +532,28 @@ h3{
     width: 100%;
     height: 100%;
     display: flex;
-    padding-top: 150px;
-    padding-bottom: 150px;
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
 
+/*refs*/
 .refs-card{
     width: 45%;
     padding: 0;
     margin: 0;
 }
 
-.refs-card:hover blockquote/*, blockquote::after*/{
+.refs-card:hover blockquote{
     border: 1px solid steelblue;
     background-color: steelblue;
 }
 
 .refs-card:hover blockquote::after{
-    border: 1px solid steelblue;
+    border-color: steelblue white white steelblue;
+}
+
+.refs-card:hover blockquote::before{
+    color: white;
 }
 
 .refs-card:hover h3{
@@ -575,10 +583,13 @@ blockquote::after{
 
 blockquote::before{
     content: "\"";
+    position: absolute;
     display: inline-block;
     font-style: italic;
     font-size: 80px;
-    height: 100%;
+    height: 50px;
+    color: steelblue;
+    padding-right: 5px;
 }
 
 .refs-card:first-child{
@@ -605,4 +616,128 @@ blockquote::before{
     font-weight: unset;
     margin-left: 20px;
     font-size: 20px;
+}
+
+.refs-card blockquote span{
+    width: 150px;
+}
+
+/*Contact*/
+#contact{
+    border-top: 2px dotted #898989;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    overflow: hidden;
+}
+
+#contact .content:not(:first-child){
+    display: flex;
+}
+
+#map{
+    width: 48%;
+    height: 400px;
+    float: left;
+    margin: 20px;
+    margin-right: 10px;
+}
+
+#contact form{
+    float: right;
+    width: 48%;
+}
+
+#contact form input, textarea{
+    color: steelblue;
+}
+
+#contact form ::placeholder{
+    color: steelblue;
+}
+
+#contact form input:focus, textarea:focus{
+    outline-color: green;
+}
+
+#contact form input:invalid {
+    color: red;
+}
+
+#contact form #contact-name{
+    width: 45%;
+    float: left;
+    margin-top: 40px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    padding: 10px;
+    border: 1px solid steelblue;
+}
+
+#contact form #contact-email{
+    width: 45%;
+    float: right;
+    margin-top: 40px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    padding: 10px;
+    border: 1px solid steelblue;  
+}
+
+#contact form #contact-subject{
+    width: 98%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    padding: 10px;
+    padding-right: 0;
+    border: 1px solid steelblue;
+}
+
+#contact form #contact-message{
+    width: 98%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    padding: 10px;
+    padding-right: 0;
+    border: 1px solid steelblue;
+}
+
+#contact form #contact-submit{
+    border-radius: 5px;
+    margin-left: 29%;
+    padding: 10px;
+    margin-bottom: 60px;
+    border: 1px solid steelblue;
+    background-color: steelblue;
+    color: white;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+#contact form #contact-submit:hover{
+    background-color: green;
+    border: 1px solid green;
+}
+
+#footer{
+    background-color: black;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    width: 100%;
+    overflow: hidden;
+    color: white;
+    padding: 40px;
+}
+
+#footer .content a{
+    color: #4d4d4d;
+    text-decoration: none;
+    float: right;
+}
+
+#footer .content:first-child{
+    text-align: left;
+    color: #4d4d4d;
 }
