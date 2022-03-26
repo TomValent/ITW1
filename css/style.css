@@ -277,6 +277,10 @@ h3{
 }
 
 .about-item img{
+    border-radius: 5px;
+}
+
+.about-item img{
     transition: 0.5s ease-in-out;
 }
 
